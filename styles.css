@@ -377,6 +377,11 @@ body {
 }
 
 .imsrk2 {
+  width: 100vw;
+  overflow: hidden;
+  /* background-color: red; */
+  margin: auto;
+  height: 100vh;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -390,18 +395,16 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: -4px;
   line-height: 1;
-  display: inline;
-  animation-name: disapear;
-  animation: 1s;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
-@keyframes disapear {
-  0%{
-    display: inline;
-  }
-  100%{
-    display: none;
-  }
+.imsrk2 img{
+  width: 800px;
+  height: fit-content;
+  margin: auto;
 }
+
 /* .container-mayor{
   margin: auto;
   display: flex;
