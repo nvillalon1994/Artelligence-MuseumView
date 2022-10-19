@@ -390,9 +390,18 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: -4px;
   line-height: 1;
-  
+  display: inline;
+  animation-name: disapear;
+  animation: 1s;
 }
-
+@keyframes disapear {
+  0%{
+    display: inline;
+  }
+  100%{
+    display: none;
+  }
+}
 /* .container-mayor{
   margin: auto;
   display: flex;
@@ -406,12 +415,13 @@ body {
 .caracteristicas{
   height: 100vh;
   display: flex;
-
+  animation: showsection 10s linear;
 }
-.aboutus p{
+.caracteristicas p{
   color: white;
   margin: auto;
 }
+
 .contenedor-phone{
   height: 529px;
   width: 255px;
