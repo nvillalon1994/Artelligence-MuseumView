@@ -1,141 +1,536 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <title>Artelligence</title>
-</head>
-<body>
-    
-        <div class="cover-5">
-            <header>
-                <nav class="navBar">
-                <img class="logo" src="./media/images/Artelligence invert.png" alt="" />
-      
-              <ul class="items">
-                <li class="item">
-                  Nosotros
-                </li>
-                <li class="item">
-                  Servicios
-                </li>
-                <li class="item">
-                  Blog
-                </li>
-              </ul>
-                </nav>
-              
-            </header>
-      
-            <section class="home">
-              
-                <!-- <video class="header-video"  src="./media/videos/Videopitch Artelligence 2022 v1 3 min.mp4" autoplay muted controls></video> -->
-                <article class="header-text">
-                  <h1>Creatividad y Tecnología
-                    al servicio del arte</h1>
-                  <h2 class="header-video">Museum View es una plataforma de guía
-                    interactiva para museos. Por medio de una
-                    App, potencia y personaliza la experiencia
-                    de los usuarios en los museos y el arte.</h2>
-                    <div class="app-stores">
-                      
-                      <img src="./media/images/play.png" alt="">
-                      <img src="./media/images/App Store.png" alt="">
-                    </div>
-                     
-                    
-                </article>
-                
-                <article class="header-img ">
-                  <img  src="./media/images/phonelogo.png" alt="" />
-                </article>
-                
-                
-                
-                
-            </section>
-            <section class="caracteristicas">
-              <p>hola como estas</p>
-              <div class="contenedor-phone">
-                <img src="./media/images/img/pngfind.com-white-iphone-png-2240895 (2).png" alt="">
-                <div class="back-phone">
-                    
-                </div>
-                <div class="moving">
 
-                    <img src="./media/images/img/screens_program-02.png" alt="">
-                    <img src="./media/images/img/screens_program-03.png" alt="">
-                    <img src="./media/images/img/screens_program-04.png" alt="">
-                    <img src="./media/images/img/screens_program-06.png" alt="">
-                    <img src="./media/images/img/screens_program-07.png" alt="">
-                    <img src="./media/images/img/screens_program-08.png" alt="">
-                    <img src="./media/images/img/screens_program-12.png" alt="">
-                    <img src="./media/images/img/screens_program-14.png" alt="">
-                    <img src="./media/images/img/screens_program-16.png" alt="">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="./styles.css"> -->
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="./style3.css"> -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="./media/images/Museum transp.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title>Museum View</title>
+
+</head>
+
+<body>
+
+  <div class="cover-5">
+    <header>
+      <nav class="navBar" id="navBar">
+        <a href="#home"><img class="logo" id="logo" src="./media/images/Museum transp.png" alt="" /></a>
+
+
+        <ul class="items">
+          <li class="item">
+            <a href="#aboutus">
+              Nosotros
+            </a>
+
+          </li>
+          <li class="item">
+            <a href="#caracteristicas">
+              Caracteristicas
+            </a>
+
+          </li>
+          <li class="item">
+            <a href="#services">
+              Servicios
+            </a>
+
+          </li>
+
+          <li class="item">
+            <a href="#screens">
+              Screenshots
+            </a>
+
+          </li>
+          <li class="item">
+            <a href="#paquetes">
+              Paquetes
+            </a>
+
+          </li>
+          <li class="item">
+            <a href="#contact">
+              Contacto
+            </a>
+
+          </li>
+          <li class="item">
+            <a href="./muntref/muntref.html">
+              Muntref
+            </a>
+
+          </li>
+          <li class="item">
+            <a href="./blog/blog.html">
+              Blog
+            </a>
+
+          </li>
+          <li class="item">
+            <a href="./politicas/politicas.html">
+              Políticas de Privacidad
+            </a>
+
+          </li>
+
+        </ul>
+      </nav>
+
+    </header>
+    
+    <section class="home" id="home">
+
+
+      <article class="header-text">
+        <h1>Creatividad y Tecnología
+          al servicio del arte</h1>
+        <h2 class="header-video">Museum View es una plataforma de guía
+          interactiva para museos. Por medio de una
+          App, potencia y personaliza la experiencia
+          de los usuarios en los museos y el arte.</h2>
+        
+
+
+      </article>
+
+      <article class="header-img ">
+        <img src="./media/images/phonelogo.png" alt="" />
+      </article>
+
+
+
+
+    </section>
+    <section class="aboutus" id="aboutus">
+
+      <article class="about-content" >
+        <div class="video">
+          <video src="./media/videos/Videopitch_Artelligence_2022_v1_3_min_AdobeExpress (1).mp4" controls autoplay
+            muted></video>
+        </div>
+        <div class="about-text">
+          <div class="fondo-phone">
+            <h1>¿Quienes Somos?</h1>
+            <p>Somos creadores de contenidos multimediales y plataformas móviles orientadas a optimizar la experiencia
+              del arte por medio de la tecnología.</p>
+            <img src="./media/images/MVLogo.png" alt="">
+          </div>
+
+        </div>
+      </article>
+
+
+    </section>
+    <section class="features">
+
+
+      <section class="caracteristicas" id="caracteristicas">
+
+       
+        <article class="functions2">
+          <article class="function2">
+            <div class="function-img-container2">
+              <img src="./media/images/agenda2.png" alt="">
+            </div>
+            <h3>Agenda de muestras y exposiciones</h3>
+
+          </article>
+          <article class="function2 reco2">
+            <div class="function-img-container2">
+              <img src="./media/images/notificaciones.png" alt="">
+            </div>
+            <h3>Notificaciones sobre las muestras
+              y eventos en tiempo real</h3>
+
+          </article>
+          <article class="function2">
+            <div class="function-img-container2">
+              <img src="./media/images/audioguia2.png" alt="">
+            </div>
+            <h3>Audioguías</h3>
+
+          </article>
+
+
+        </article>
+
+        <div class="contenedor-maestro">
+
+          <div class="contenedor-phone-master">
+            <h1>Caracteristicas Increíbles</h1>
+            <div class="contenedor2-phone">
+
+              <div class="slides-container">
+                <div class="phone">
+                  
+
+                </div>
+                <div class="slides-inner">
+
+                  <img class="slide" src="./media/images/img/screens_program-02.png" alt="">
+                  <img class="slide" src="./media/images/img/screens_program-03.png" alt="">
+                  <img class="slide" src="./media/images/img/screens_program-04.png" alt="">
+                  <img class="slide" src="./media/images/img/screens_program-06.png" alt="">
+                  <img class="slide" src="./media/images/img/screens_program-07.png" alt="">
+                  <img class="slide" src="./media/images/img/screens_program-08.png" alt="">
+                  <img class="slide" src="./media/images/img/screens_program-12.png" alt="">
+                  <img class="slide" src="./media/images/img/screens_program-14.png" alt="">
+                  <img class="slide" src="./media/images/img/screens_program-16.png" alt="">
                 </div>
               </div>
-                <p>hola como estas</p>
-            </section>
-          </div>
-          <div class="cover-4"></div>
-          <div class="cover-3"></div>
-          <div class="cover-2"></div>
-          <div class="cover">
-            <div class="cover-heading">
-                <img class="imsrk" src="./media/images/MVLogo.png" alt="">
-              
+
+
+
             </div>
+
           </div>
-          <div class="imsrk2">
-            <img class="" src="./media/images/artelligence_logo_transparente.png" alt="">
-          </div>
+
+
+        </div>
+        <article class="functions">
+          <article class="function">
+            <div class=" tres60">
+              <img src="./media/images/360 1.png" alt="">
+            </div>
+            <h3>Visitas interactivas EN 360°</h3>
+
+          </article>
+          <article class="function reco">
+            <div class="function-img-container">
+              <img src="./media/images/reconocimiento imagenes.png" alt="">
+            </div>
+            <h3>Reconocimiento de imágenes</h3>
+
+          </article>
+          <article class="function">
+            <div class="function-img-container">
+              <img src="./media/images/info.png" alt="">
+            </div>
+            <h3>Acceso para el museo a
+              información y estadísticas</h3>
+
+          </article>
+
+
+        </article>
+      </section>
+    </section>
+    <section class="services" id="services">
+      <h1>Otras caracterisicas</h1>
+      <div class="row">
+        <div class="service">
+          <i class="fas fa-laptop-code"></i>
+          <h2>Suscripción mensual para Museos</h2>
+          <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                    quae?
+          </p>
+        </div>
+        <div class="service">
           
-         
+          <i class="fas fa-mobile-alt"></i>
+          <h2>Aplicación Personalizada</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+            quae?
+          </p>
+          
+        </div>
+        <div class="service">
+          <!-- <i class="fab fa-sketch"></i> -->
+          <i class="fas fa-box"></i>
+          <h2>Gestor de inventario</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+            quae?
+          </p>
+        </div>
+        <div class="service">
+          <i class="fas fa-film"></i>
+          <h2>Producción de contenido</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+            quae?
+          </p>
+        </div>
+        <div class="service">
+          <i class="fa fa-location-arrow"></i>
+          <h2>Geolocalización</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+            quae?
+          </p>
+        </div>
+        <div class="service">
+          <i class="fas fa-chart-line"></i>
+          
+          
+          <h2>Analisis y estadisticas</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+            quae?
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="screens" id="screens">
+
+      <div class="content">
+
+        <h3>Screenshots</h3>
+
+      </div>
+      <div class="swiper-container image-slider">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide"><img src="./media/images/img/screens_program-02.png" alt=""></div>
+          <div class="swiper-slide"><img src="./media/images/img/screens_program-03.png" alt=""></div>
+          <div class="swiper-slide"><img src="./media/images/img/screens_program-04.png" alt=""></div>
+          <div class="swiper-slide"><img src="./media/images/img/screens_program-06.png" alt=""></div>
+          <div class="swiper-slide"><img src="./media/images/img/screens_program-07.png" alt=""></div>
+          <div class="swiper-slide"><img src="./media/images/img/screens_program-08.png" alt=""></div>
+          <div class="swiper-slide"><img src="./media/images/img/screens_program-11.png" alt=""></div>
+
+        </div>
+      </div>
+    </section>
+    <section class="paquetes" id="paquetes">
+      <h1>Paquetes</h1>
       
       
-        <!-- <header>
-            <nav class="navBar">
-                <img class="" src="media\images\Artelligence invert.png" alt="logo">
-                <ul class="links">
-                    <li>Link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-            
-                </ul>
-            </nav>
-        </header>
-        <section class="content">
-            
-            <section class="home">
-                
+      <div class="">                            
+        <table class="pricing-table">
+            <tbody>
+              <tr>
+                <td width="30%" class="pricing-table-text">
+                    <h2>Seleccione el paquete que mejor se adapte a sus necesidades.</h2>
                     
-                    <video  controls autoplay="autoplay" controls muted>
-                        <source src="./media/videos/Videopitch Artelligence 2022 v1 3 min.mp4" type="video/mp4">
-                    </video>
-                    <img src="./media/images/prueba.png" alt="">
-                    
-                    
-                
-            </section>
-            <section class="aboutus">
+                </td>
+                <td width="20%" >
+                    <div class="pricing-table-item">
+                        <div class="pricing-table-item-head">
+                            <p>Basico</p>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </td>
+                <td width="20%">
+                    <div class="pricing-table-item">
+                        <div class="pricing-table-item-head">
+                            <p>Standard</p>
+                            
+                        </div>                                          
+                    </div>
+                </td>
+                <td width="20%">
+                    <div class="pricing-table-item">
+                        <div class="pricing-table-item-head">
+                            <p>Premium</p>
+                            
+                        </div>
+                        
+                        <!-- <div class="pricing-table-item-purchase">
+                          <button class="btn btn-success btn-block">Conseguir</button>
+                        </div>                                             -->
+                    </div>
+                </td>
+            </tr>
 
-            </section>
-            <section class="services"></section>
-        </section>
-        <footer>
+            <tr class="pricing-table-list">
+                <td>Geolocalización</td>
+                
+                <td><span class="glyphicon glyphicon-ok"><i class="fa fa-check" aria-hidden="true"></i></span></td>
+                <td><span class="glyphicon glyphicon-ok"><i class="fa fa-check" aria-hidden="true"></i></span></td>
+                <td><span class="glyphicon glyphicon-ok"><i class="fa fa-check" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr class="pricing-table-list">
+                <td>Información acerca del museo</td>
+                <td><span class="glyphicon glyphicon-ok"><i class="fa fa-check" aria-hidden="true"></i></span></td>
+                <td><span class="glyphicon glyphicon-ok"><i class="fa fa-check" aria-hidden="true"></i></span></td>
+                <td><span class="glyphicon glyphicon-ok"><i class="fa fa-check" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr class="pricing-table-list">
+                <td>Relevamiento de obras</td>
+                <td>30</td>
+                <td>60</td>
+                <td>120</td>
+            </tr>
+            <tr class="pricing-table-list">
+                <td>Producción de audioguías</td>
+                <td>&mdash;</td>
+                <td>10</td>
+                <td>30</td>
+            </tr>                                    
+            <tr class="pricing-table-list">
+                <td>Posibilidad de carga de audioguías</td>
+                <td>&mdash;</td>
+                <td><span class="glyphicon glyphicon-ok"><i class="fa fa-check" aria-hidden="true"></i></span></td>
+                <td><span class="glyphicon glyphicon-ok"><i class="fa fa-check" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr class="pricing-table-list">
+                <td>Soporte para reservas de grupos o instituciones educativas.</td>
+                <td><span class="glyphicon glyphicon-ok"><i class="fa fa-check" aria-hidden="true"></i></span></td>
+                <td><span class="glyphicon glyphicon-ok"><i class="fa fa-check" aria-hidden="true"></i></span></td>
+                <td><span class="glyphicon glyphicon-ok"><i class="fa fa-check" aria-hidden="true"></i></span></td>
+            </tr>                                    
+            <tr class="pricing-table-list">
+                <td>Producción de tour fotográfico en 360 grados de hasta 30 fotografías panorámicas y hasta 20 hotspots </td>
+                <td>&mdash;</td>
+                <td>1 Tour</td>
+                <td>2 Tours</td>
+            </tr>
+            <tr class="pricing-table-list">
+                <td>Plataforma de carga de obras y recorridos</td>
+                <td>&mdash;</td>
+                <td><span class="glyphicon glyphicon-ok"><i class="fa fa-check" aria-hidden="true"></i></span></td>
+                <td><span class="glyphicon glyphicon-ok"><i class="fa fa-check" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr class="pricing-table-list">
+                <td>Soporte</td>
+                <td>24/7</td>
+                <td>24/7</td>
+                <td>24/7</td>
+            </tr>
+        </tbody></table>
+    </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="front side">
+          <div class="content">
+            <h1>Contactanos</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ducimus nobis incidunt, modi aut fugiat
+              officia placeat, vel non minus illo commodi, sunt quisquam est.
+            </p>
+          </div>
+        </div>
+        <div class="back side">
+          <div class="content">
 
-        </footer> -->
+            <form>
+              <label>Nombre :</label>
+              <input type="text">
+              <label>E-mail :</label>
+              <input type="text">
+              <label>Mensaje :</label>
+              <textarea></textarea>
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <div class="img-contact">
+        <img src="./media/images/Museum transp.png" alt="">
+      </div>
+
+    </section>
+  </div>
+  <!-- <div class="cover-4"></div>
+  <div class="cover-3"></div>
+  <div class="cover-2"></div>
+  <div class="cover">
+    <div class="cover-heading">
+      <img class="imsrk" src="./media/images/MVLogo.png" alt="">
+
+    </div>
+  </div>  -->
+
+  
+
+
+
+
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/ModifiersPlugin.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js'></script>
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  
+  <script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
-    <script src="./index.js"></script>
+let menu = document.querySelector('#menu-bar');
+    let navbar = document.querySelector('.navbar');
+
+
+    let cover5 = document.getElementsByClassName('cover-5')
+    console.log(cover5[0])
+    cover5[0].onscroll = (e) => {
+      scrollFunction(e)
+      console.log(e)
+    }
+    function scrollFunction(e) {
+      let navBar = document.getElementById('navBar')
+      let logo = document.getElementById('logo')
+      console.log(logo)
+      console.log(e.target.scrollTop)
+      let navBar2 = document.getElementsByClassName('navBar')
+      if (e.target.scrollTop > 300) {
+        navBar.style.padding = "6px 80px"
+        logo.style.width = "35px"
+
+      } else {
+        logo.style.width = "50px"
+        navBar.style.padding = "12px 80px"
+        console.log("agrando el padding el padding")
+
+
+
+      }
+    }
+    var swiper = new Swiper(".image-slider", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      }
+    });
+
+    
+
+  </script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script> -->
+  <!-- <script src="./index.js"></script> -->
+
 </body>
+
 </html>

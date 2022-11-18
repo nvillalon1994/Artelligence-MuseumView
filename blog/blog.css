@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+
+          box-sizing: border-box;
+          font-family: 'Rubik', sans-serif;
+          scroll-behavior: smooth;
+          /* display: none; */
+background-color: #212121;
+
+  /* height: 100vh; */
+  /* overflow: hidden; */
+}
+.navBar {
+  /* height: 60px; */
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  width: 99.3%;
+  background-color: rgba(64, 64, 64, 0.5);
+  padding: 12px 80px;
+  transition: 0.4s;
+  /* background-color: red; */
+}
+.navbar-dark {
+  padding: 7px 80px;
+}
+.navBar ul {
+  display: flex;
+  margin: auto 0;
+  width: 87%;
+  /* background-color: red; */
+  justify-content: space-between;
+  padding: 5px 0;
+  gap: 2px;
+  margin-right: -20px;
+}
+.navBar > ul > li {
+  color: white;
+  /* text-transform: uppercase; */
+  /* font-weight: 600; */
+  font-size: 17px;
+  /* letter-spacing: 1px; */
+  list-style-type: none;
+  /* background-color: green; */
+
+  animation-name: showright;
+  animation-duration: 2s;
+  /* animation-delay: 2.2s; */
+}
+.navBar > ul > li > a:hover {
+  color: #fd8730;
+  text-decoration: underline;
+}
+.navBar ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s linear;
+}
+.logo {
+  width: 50px;
+  animation-name: showleft;
+  animation-duration: 2s;
+  /* animation-delay: 2.2s; */
+  transition: 0.4s;
+}
+@keyframes showright {
+  0% {
+    transform: translateX(2000px);
+  }
+
+  90% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes showleft {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  90% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*BLOG*/
+
+
+
+
+.container-blog{
+    border: 1px solid transparent;
+    padding: 77px 0 0 0 ;
+    width: 100.7vw;
+    height: 100vh;
+    margin: -10px;
+    /* overflow: hidden; */
+    /* display: none; */
+    /* background-color: red; */
+    
+  }
+  
+  
