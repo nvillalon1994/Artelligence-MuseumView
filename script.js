@@ -1,4 +1,6 @@
-console.clear();
+// console.clear();
+
+console.log("hola")
 
 var slideDelay = 2;
 var slideDuration = 0.4;
@@ -50,13 +52,13 @@ var draggable = new Draggable(proxy, {
 
 window.addEventListener("resize", resize);
 
-prevButton.addEventListener("click", function() {
-  animateSlides(1);
-});
+// prevButton.addEventListener("click", function() {
+//   animateSlides(1);
+// });
 
-nextButton.addEventListener("click", function() {
-  animateSlides(-1);
-});
+// nextButton.addEventListener("click", function() {
+//   animateSlides(-1);
+// });
 
 function updateDraggable() {
   
@@ -117,3 +119,11 @@ function wrapPartial(min, max) {
     return ((r + v % r) % r) + min;
   }
 }
+
+const item_nav = document.getElementById("items2")
+const toggler = document.getElementById("toggler")
+item_nav.addEventListener("click",function(){
+  console.log("hola")
+  toggler.checked=false
+})
+

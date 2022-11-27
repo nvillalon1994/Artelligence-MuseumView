@@ -32,7 +32,74 @@
       <nav class="navBar" id="navBar">
         <a href="#home"><img class="logo" id="logo" src="./media/images/Museum transp.png" alt="" /></a>
 
-
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler" id="toggler">
+          <div class="hamburger" id="hamb"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul id="items2">
+                  <li class="item2">
+                    <a href="#aboutus">
+                      Nosotros
+                    </a>
+        
+                  </li>
+                  <li class="item2">
+                    <a href="#caracteristicas">
+                      Caracteristicas
+                    </a>
+        
+                  </li>
+                  <li class="item2">
+                    <a href="#services">
+                      Servicios
+                    </a>
+        
+                  </li>
+        
+                  <li class="item2">
+                    <a href="#screens">
+                      Screenshots
+                    </a>
+        
+                  </li>
+                  <li class="item2">
+                    <a href="#paquetes">
+                      Paquetes
+                    </a>
+        
+                  </li>
+                  <li class="item2">
+                    <a href="#contact">
+                      Contacto
+                    </a>
+        
+                  </li>
+                  <li class="item2">
+                    <a href="./muntref/muntref.html">
+                      Muntref
+                    </a>
+        
+                  </li>
+                  <li class="item2">
+                    <a href="./blog/blog.html">
+                      Blog
+                    </a>
+        
+                  </li>
+                  <li class="item2">
+                    <a href="./politicas/politicas.html">
+                      Políticas de Privacidad
+                    </a>
+        
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <ul class="items">
           <li class="item">
             <a href="#aboutus">
@@ -171,7 +238,7 @@
 
         </article>
 
-        <div class="contenedor-maestro">
+        <article class="contenedor-maestro">
 
           <div class="contenedor-phone-master">
             <h1>Caracteristicas Increíbles</h1>
@@ -203,7 +270,7 @@
           </div>
 
 
-        </div>
+        </article>
         <article class="functions">
           <article class="function">
             <div class=" tres60">
@@ -481,25 +548,28 @@ let menu = document.querySelector('#menu-bar');
 
 
     let cover5 = document.getElementsByClassName('cover-5')
-    console.log(cover5[0])
+    
     cover5[0].onscroll = (e) => {
       scrollFunction(e)
-      console.log(e)
+      
     }
     function scrollFunction(e) {
       let navBar = document.getElementById('navBar')
       let logo = document.getElementById('logo')
-      console.log(logo)
-      console.log(e.target.scrollTop)
+      let hamb = document.getElementById('hamb')
+      // console.log(logo)
+      // console.log(e.target.scrollTop)
       let navBar2 = document.getElementsByClassName('navBar')
       if (e.target.scrollTop > 300) {
         navBar.style.padding = "6px 80px"
         logo.style.width = "35px"
+        hamb.style.paddingTop = "0px "
 
       } else {
         logo.style.width = "50px"
         navBar.style.padding = "12px 80px"
-        console.log("agrando el padding el padding")
+        hamb.style.paddingTop = "1rem "
+        
 
 
 
