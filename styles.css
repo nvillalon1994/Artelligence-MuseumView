@@ -2928,7 +2928,7 @@ tbody tr:last-child td { border-bottom: 0 none; }
     color: #fff;
   }
 }
-@media screen and (max-width: 859px) and (min-width: 720px){
+@media screen and (max-width: 1023px) and (min-width: 720px){
   .navBar {
     background-color: lightblue;
     width: 100%;
@@ -3839,6 +3839,9 @@ tbody tr:last-child td { border-bottom: 0 none; }
     right: 0;
     
   }
+  .items2{
+    font-size: 10px;
+  }
   .menu-wrap {
     display: block;
     position: fixed;
@@ -3953,13 +3956,14 @@ tbody tr:last-child td { border-bottom: 0 none; }
   .items2{
     display: flex;
     flex-direction: column;
+    font-size: 10px;
   }
   .menu-wrap .menu {
     background-color: rgba(0, 0, 0,0.8);
     position: fixed;
     top: 0;
     right: 0;
-    width: 25%;
+    width: 100%;
     height: 100%;
     visibility: hidden;
     overflow: hidden;
@@ -3980,6 +3984,7 @@ tbody tr:last-child td { border-bottom: 0 none; }
     justify-content: center;
     transform: scale(0);
     transition: all 0.4s ease;
+    padding-top: 75px;
   }
   
   .menu-wrap .menu > div > div {
@@ -4274,7 +4279,7 @@ tbody tr:last-child td { border-bottom: 0 none; }
   }
   /* Paquetes  */
   .paquetes{
-    display: none;
+    overflow: scroll;
   }
   /* Contact  */
   .img-contact{
@@ -4309,5 +4314,48 @@ tbody tr:last-child td { border-bottom: 0 none; }
   }
   .back textarea{
     height: 120px;
+  }
+  
+  /* Paquetes response */
+  .paquetes{
+    display: none;
+  }
+  .screens2{
+    padding: 40px;
+  }
+  .screens2 .content2 {
+    padding-top: 5rem;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  .content2 h3{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding-bottom: 20px;
+  }
+  .pack{
+    height: 450px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    
+  }
+  .pack h4{
+    font-size: 30px;
+    padding: 10px;
+    background-color: #fd8730;
+    border-radius: 10px 10px 0 0;
+    color: white;
+  }
+  .pack p{
+    text-align: left;
+    padding: 12px;
+    font-size: 15px;
+    
   }
 }
