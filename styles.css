@@ -1602,7 +1602,9 @@ tbody tr:last-child td { border-bottom: 0 none; }
   background-color: #0191f8;
 }
 /* eof pricing table */
-
+.screens2{
+  display: none;
+}
 /* Responsive */
 @media screen and (max-width: 1920px) and (min-width: 1440px) {
   .menu-wrap {
@@ -4322,6 +4324,9 @@ tbody tr:last-child td { border-bottom: 0 none; }
   }
   .screens2{
     padding: 40px;
+    margin: 30px;
+    display: inline;
+    
   }
   .screens2 .content2 {
     padding-top: 5rem;
@@ -4336,7 +4341,7 @@ tbody tr:last-child td { border-bottom: 0 none; }
   }
   .pack{
     height: 450px;
-    
+    margin: 0 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
