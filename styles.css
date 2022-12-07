@@ -1611,7 +1611,7 @@ tbody tr:last-child td { border-bottom: 0 none; }
     display: none;
   }
   .navBar {
-    background-color: rgb(251, 0, 255);
+    
   }
 
   .navBar ul {
@@ -1881,7 +1881,7 @@ tbody tr:last-child td { border-bottom: 0 none; }
 
 @media screen and (max-width: 1440px) and (min-width: 1367px) {
   .navBar {
-    background-color: rgb(0, 0, 255);
+    
   }
   .menu-wrap {
     display: none;
@@ -2151,7 +2151,7 @@ tbody tr:last-child td { border-bottom: 0 none; }
 }
 @media screen and (max-width: 1366px) {
   .navBar {
-    background-color: red;
+    
   }
   .menu-wrap {
     display: none;
@@ -2162,7 +2162,7 @@ tbody tr:last-child td { border-bottom: 0 none; }
     display: none;
   }
   .navBar {
-    background-color: green;
+    
     /* position: relative; */
     width:100%;
   }
@@ -2548,7 +2548,7 @@ tbody tr:last-child td { border-bottom: 0 none; }
 
 @media screen and (max-width: 1023px) and (min-width: 860px){
   .navBar {
-    background-color: lightcoral;
+    
     width: 100%;
   }
   .items .item{
@@ -2930,9 +2930,9 @@ tbody tr:last-child td { border-bottom: 0 none; }
     color: #fff;
   }
 }
-@media screen and (max-width: 1023px) and (min-width: 720px){
+@media screen and (max-width: 859px) and (min-width: 720px) and (min-height:400px){
   .navBar {
-    background-color: lightblue;
+    
     width: 100%;
   }
   
@@ -3133,6 +3133,7 @@ tbody tr:last-child td { border-bottom: 0 none; }
   /* home  */
   .home{
     flex-direction: column;
+    height: fit-content;
   }
   .header-text{
     width: 100%;
@@ -3164,6 +3165,10 @@ tbody tr:last-child td { border-bottom: 0 none; }
     margin: auto;
   }
   /* nosotros  */
+  .aboutus{
+    min-height: fit-content;
+    height: fit-content;
+  }
   .about-content{
     display: flex;
     flex-direction: column;
@@ -3207,10 +3212,16 @@ tbody tr:last-child td { border-bottom: 0 none; }
     margin-top: 20px;
   }
   /* Caracteristicas  */
+  .features{
+    margin-top: 0;
+  }
   .caracteristicas{
+    
+    height: fit-content;
     display: flex;
     justify-content: center;
     margin: 0;
+    margin-top: -100px;
     padding: 0;
   }
   .contenedor-maestro{
@@ -3218,14 +3229,17 @@ tbody tr:last-child td { border-bottom: 0 none; }
     margin-top: 60px;
     
   }
+  
   .contenedor-phone-master h1 {
     font-size: 28px;
     margin: 100px 0px 80px 0;
   }
   .contenedor2-phone {
+    min-height: 400px;
     height: 35rem;
     width: 18rem;
-    background-size: 18rem 35rem;
+    background-size: 18rem 35rem ;
+    
     margin-top: -20px;
     
     
@@ -3318,10 +3332,12 @@ tbody tr:last-child td { border-bottom: 0 none; }
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-  
+    
     width: 100%;
   }
-  
+  .services{
+    
+  }
   .service {
     margin: auto;
     width: 250px;
@@ -3371,10 +3387,22 @@ tbody tr:last-child td { border-bottom: 0 none; }
   .service:hover i {
     color: #fff;
   }
+  .screens{
+    height: fit-content;
+  }
+  .paquetes{
+    
+  }
+  .contact {
+    height: fit-content;
+  }
+  .contact .img-contact{
+    display: none;
+  }
 }
-@media screen and (max-width: 719px) and (min-width: 600px){
+@media screen and (max-width: 719px) and (min-width: 600px) and (min-height:400px){
   .navBar {
-    background-color: rgb(255, 174, 174);
+    
     width: 100%;
   }
   
@@ -3575,6 +3603,9 @@ tbody tr:last-child td { border-bottom: 0 none; }
   /* home  */
   .home{
     flex-direction: column;
+    min-height: fit-content;
+    height: fit-content;
+    
   }
   .header-text{
     width: 100%;
@@ -3606,6 +3637,10 @@ tbody tr:last-child td { border-bottom: 0 none; }
     margin: auto;
   }
   /* nosotros  */
+  .aboutus{
+    min-height: fit-content;
+    height: fit-content;
+  }
   .about-content{
     display: flex;
     flex-direction: column;
@@ -3649,27 +3684,37 @@ tbody tr:last-child td { border-bottom: 0 none; }
     margin-top: 20px;
   }
   /* Caracteristicas  */
+  .features{
+    
+  }
   .caracteristicas{
+    /* min-height: 200vh; */
+    height: fit-content;
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
   }
   .contenedor-maestro{
-    width: 40%;
+    width: 20%;
     margin-top: 60px;
+    height: fit-content;
+    
     
   }
   .contenedor-phone-master h1 {
-    font-size: 28px;
-    margin: 100px 0px 80px 0;
+    font-size: 18px;
+    margin: 0px 0px 0px 0;
+    position: absolute;
+    left: 37%;
+    margin: auto;
   }
   .contenedor2-phone {
     height: 35rem;
     width: 18rem;
     background-size: 18rem 35rem;
     margin-top: -20px;
-    
+    display: none;
     
   }
   .phone {
@@ -3763,7 +3808,9 @@ tbody tr:last-child td { border-bottom: 0 none; }
   
     width: 100%;
   }
-  
+  .services{
+    height: fit-content;
+  }
   .service {
     margin: auto;
     width: 150px;
@@ -3814,11 +3861,23 @@ tbody tr:last-child td { border-bottom: 0 none; }
   .service:hover i {
     color: #fff;
   }
-
+  .screens{
+    height: fit-content;
+  }
+  .paquetes{
+    height: fit-content;
+  }
+  .contact {
+    height: fit-content;
+  }
+  .contact .img-contact{
+    display: none;
+  }
 }
-@media screen and (max-width: 599px) and (min-width:360px){
+/* phone portail */
+@media screen and (max-width: 599px) and (min-width:320px) and (min-height:401px){
   .navBar {
-    background-color: lightgreen;
+    /* background-color: red; */
     width: 100%;
   }
   .logo{
@@ -4026,10 +4085,13 @@ tbody tr:last-child td { border-bottom: 0 none; }
   /* home  */
   .home{
     flex-direction: column;
+    height: fit-content;
   }
   .header-text{
     width: 100%;
-    
+    display: flex;
+    justify-content: center;
+    gap: 0;
     margin: auto;
   }
   .header-text h1 {
@@ -4037,18 +4099,22 @@ tbody tr:last-child td { border-bottom: 0 none; }
     font-size: 28px;
     text-align: center;
     /* margin-bottom: 20px; */
+    padding: 0;
+
   }
   .header-text h2 {
     font-size: 11px;
-    margin: auto;
+    /* margin: 0 auto; */
     color: white;
-    width: 90%;
-    margin-top: 0;
+    width: 100%;
+    /* background-color: red; */
+    padding: 0;
+    margin-top: -120px;
   }
   .header-img {
     width: 100%;
     margin: 0 auto;
-    margin-top: -150px;
+    margin-top: -270px;
     display: flex;
     justify-content: center;
   }
@@ -4058,6 +4124,9 @@ tbody tr:last-child td { border-bottom: 0 none; }
     margin: auto;
   }
   /* nosotros  */
+  .aboutus{
+    height: 700px;
+  }
   .about-content{
     display: flex;
     flex-direction: column;
@@ -4070,7 +4139,7 @@ tbody tr:last-child td { border-bottom: 0 none; }
     
   }
   .about-content .video video {
-    width: 330px;
+    width: 300px;
     margin: auto;
   }
   .about-text {
@@ -4103,27 +4172,42 @@ tbody tr:last-child td { border-bottom: 0 none; }
     width: 100px;
   }
   /* Caracteristicas  */
+  .features{
+    /* height: fit-content; */
+  }
   .caracteristicas{
     display: flex;
     justify-content: center;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    display: none;
+    
+    /* display: none; */
   }
+ 
   .contenedor-maestro{
-    width: 40%;
+    width: 100%;
     margin-top: 60px;
+    display: flex;
+    position: inherit;
     
   }
   .contenedor-phone-master h1 {
-    font-size: 28px;
-    margin: 100px 0px 80px 0;
+    font-size: 20px;
+    padding: 0;
+    margin: 0px 0px 0px 0;
+    width: 100%;
+    /* margin: auto; */
+    /* position: absolute; */
+    /* top: 0; */
+
   }
   .contenedor2-phone {
     height: 35rem;
     width: 18rem;
     background-size: 18rem 35rem;
     margin-top: -20px;
+    display: none;
     
     
   }
@@ -4148,68 +4232,79 @@ tbody tr:last-child td { border-bottom: 0 none; }
   }
 
   .functions {
-    margin-top: 100px;
-    /* padding: 100px; */
-
-    width: 30%;
+    width: 45%;
+    overflow: hidden;
     
-    /* background-color: red; */
+    margin: 0;
+    padding: 0;
+    gap: 60px;
   }
 
   .function {
-    margin-left: -50px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
   .function h3 {
-    font-size: 15px;
-    width: 100px;
+    font-size: 12px;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    padding: 0;
   }
-  .function-img-container {
-    width: 40px;
-    height: 40px;
-  }
-  .function-img-container img {
-    width: 30px;
-  }
-  .function:nth-child(even) {
-    margin-left: -50px;
-  }
-  .reco h3 {
-    width: 40px;
-    
-    
-  }
-  .functions2 {
-    margin-top: 100px;
-    /* padding: 100px; */
-    padding-left: 160px;
-    width: 30%;
 
-    /* background-color: red; */
+  .function:nth-child(even) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .functions2 {
+    width: 50%;
+    overflow: hidden;
+    
+    margin: 0;
+    padding: 0;
+    gap: 46px;
   }
   .function2 {
-    margin-left: -210px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
   .function2 h3 {
-    font-size: 15px;
-    width: 120px;
-  }
+    font-size: 12px;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+  }  
+  
+ 
 
-  .function21 h3 {
-    font-size: 15px;
+  .function2:nth-child(odd) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
+ 
 
   .reco2 {
-    margin-left: -140px;
+    margin-left: 0px;
     padding: 0;
     
-    width: 200px;
+    width: fit-content;
   }
   /* Servicios  */
   .services h1{
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-top: -30px;
   }
 
@@ -4222,7 +4317,13 @@ tbody tr:last-child td { border-bottom: 0 none; }
   
     width: 100%;
   }
-  
+  .services{
+    height: fit-content;
+  }
+  .services h1{
+    padding-top :100px ;
+    margin-bottom: 30px;
+  }
   .service {
     margin: auto;
     width: 120px;
@@ -4252,7 +4353,9 @@ tbody tr:last-child td { border-bottom: 0 none; }
   .service h2 {
     font-weight: 600;
     margin: auto;
-    font-size: 15px;
+    font-size: 12px;
+    padding-top: 8px;
+    
   }
   .service p {
     display: none;
@@ -4367,4 +4470,15 @@ tbody tr:last-child td { border-bottom: 0 none; }
     width: 300px;
     height: fit-content;
   }
+  .screens2{
+    
+    height: fit-content;
+    
+  }
+}
+/* phone landscape */
+@media screen and (max-width: 800px) and (min-width:320px) and (max-height:400px) {
+.navBar{
+  background-color: #0191f8;
+}
 }
