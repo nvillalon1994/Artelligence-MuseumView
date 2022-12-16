@@ -5,7 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="./styles.css"> -->
-  
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("hzLV5s2ryT6WuqZbq");
+    })();
+    </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +29,11 @@
   <link rel="shortcut icon" href="./media/images/Museum transp.png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <title>Museum View</title>
+  <meta name="descripción" content="Museum View es una plataforma de guía
+  interactiva para museos. Por medio de una
+  App, potencia y personaliza la experiencia
+  de los usuarios en los museos y el arte." >
+  <meta name="keywords" content="museos, recorridos, arte, Museum View, Muntref, museum view, muntref">
 
 </head>
 
@@ -551,14 +563,14 @@
         <div class="back side">
           <div class="content">
 
-            <form>
+            <form onsubmit="sendMail()">
               <label>Nombre :</label>
-              <input type="text">
+              <input type="text" id="name">
               <label>E-mail :</label>
-              <input type="text">
+              <input type="text" id="email">
               <label>Mensaje :</label>
-              <textarea></textarea>
-              <input type="submit" value="Enviar">
+              <textarea id="mensaje"></textarea>
+              <input type="submit" value="Enviar" >
             </form>
           </div>
         </div>

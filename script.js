@@ -127,3 +127,29 @@ item_nav.addEventListener("click",function(){
   toggler.checked=false
 })
 
+function sendMail(){
+  console.log("funciona");
+   var params={
+       name: document.getElementById("name").value ,
+       email: document.getElementById("email").value ,
+       mensaje: document.getElementById("mensaje").value 
+   
+   }
+   console.log(params)
+   const serviceId = "service_d75c4vb"
+   const templateId = "template_drm63qn"
+
+   emailjs.send(serviceId,templateId,params)
+   .then(
+       res=>{
+           document.getElementById("name").value=""
+           document.getElementById("email").value=""
+           document.getElementById("mensaje").value=""
+           console.log(res)
+           alert("se mando")
+       }
+   )
+   .catch((err)=>console.log(err))
+}
+
+
