@@ -1278,6 +1278,109 @@ body {
   cursor: pointer;
   transition: box-shadow 0.2s linear;
 }
+/* Team*/
+.ourTeam{
+  height: fit-content;
+  width: 100%;
+}
+.ourTeam h1{
+  color: white;
+  text-align: center;
+  padding: 80px 0 0 0 ;
+}
+.team{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.team .card{
+  position: relative;
+  width: 250px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+
+}
+.team .card .content{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* opacity: 0.5; */
+  transition: 0.5s;
+}
+.team .card:hover .content{
+  opacity: 1;
+  transform: translateY(-20px);
+}
+.team .card .content .imgBx{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0,0,0,0.25);
+}
+.team .card .content .imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team .card .content .contentBx{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 30px 0 10px;
+  line-height: 1.1em;
+}
+
+.team .card .content .contentBx h3 span{
+  color: #fd8730;
+  margin-top: 50px;
+  
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+
+}
+.team .card .sci{
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+}
+.team .card .sci li{
+  list-style-type: none;
+  margin: 0 10px;
+  transform: translateY(20px);
+  transition: 0.5s;
+  opacity: 0;
+  transition-delay: calc(0.1s * var(--i));
+}
+.team .card:hover .sci li{
+  transform: translateY(30px);
+  opacity: 1;
+}
+.team .card .sci li a{
+  color: #fff;
+  font-size: 21px;
+}
 
 /*Contact*/
 .contact {
